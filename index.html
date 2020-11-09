@@ -92,7 +92,7 @@
       <!-- END nav -->
       <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_2.png');" id="home-section">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center" id="box">
               
             <div class="col-md-7 mx-auto text-center">
               <h1 class="heading gsap-reveal-hero">Ankit Varshney</h1>
@@ -461,6 +461,13 @@
     <script src='js/typewriter.js'></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#box"), {
+        max: 15,
+        speed: 120
+      });  
+    </script>
 
     <script>
       function change_theme() {
